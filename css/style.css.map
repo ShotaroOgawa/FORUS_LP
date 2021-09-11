@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "mappings": "AgBGA,OAAO,CAAC,0FAAI",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/base/_init.scss",
+        "../scss/base/_reset.scss",
+        "../scss/mixin/_btn.scss",
+        "../scss/mixin/_font.scss",
+        "../scss/mixin/_media.scss",
+        "../scss/mixin/_other.scss",
+        "../scss/module/_about.scss",
+        "../scss/module/_dwl.scss",
+        "../scss/module/_faq.scss",
+        "../scss/module/_features.scss",
+        "../scss/module/_footer.scss",
+        "../scss/module/_header.scss",
+        "../scss/module/_mission.scss",
+        "../scss/module/_mv.scss",
+        "../scss/module/_sns.scss",
+        "../scss/setting/_config.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
