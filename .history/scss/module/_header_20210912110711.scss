@@ -1,0 +1,26 @@
+.header {
+    color: $color-accent;
+    &_inner {
+       @include inner;
+        display: flex; 
+    }
+    &_logo {
+        width: 180px;
+    }
+    &_LogoImg {
+        max-width: 100%;
+    }
+    &_MenuList {
+        display: flex;
+    }
+    &_MenuSection {
+        padding-left: 50px;
+    }
+    &_MenuLink {
+        font-size: $fontSize-pc;
+    }
+    &_LinkBtn {
+        font-size: 1.6rem;
+        @include RegisterBtn($a)
+    }
+}

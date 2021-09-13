@@ -1,0 +1,14 @@
+@mixin RegisterBtn($color-accent) {
+  font-weight: bold;
+    background-color: $color-accent;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    width: 150px;
+    max-width: 100%;
+    padding: 10px px; 
+    text-align: center;
+  }

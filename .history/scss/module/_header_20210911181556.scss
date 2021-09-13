@@ -1,0 +1,14 @@
+.header {
+    &_inner {
+        width: 1080px;
+        margin: 0 auto;
+        display: flex;
+    }
+    &_logo {
+
+    }
+    &_LogoImg {
+        width: 100%;
+        max-width: 100%;
+    }
+}

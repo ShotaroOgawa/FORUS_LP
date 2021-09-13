@@ -1,0 +1,6 @@
+@mixin inner {
+    width: 100%;
+    max-width: $inner;
+    margin: 0 auto;
+    padding: 0 15px;
+}

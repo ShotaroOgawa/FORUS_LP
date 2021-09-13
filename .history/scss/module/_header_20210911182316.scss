@@ -1,0 +1,12 @@
+.header {
+    &_inner {
+        @include inner; 
+    }
+    &_logo {
+
+    }
+    &_LogoImg {
+        width: 180px;
+        max-width: 100%;
+    }
+}

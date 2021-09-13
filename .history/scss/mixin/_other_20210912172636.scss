@@ -1,0 +1,24 @@
+@mixin inner {
+    max-width: $inner;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@mixin title-lv1($text-title) {
+    position: relative;
+        bottom: -8px;
+        display: block;
+        content: $text-title;
+        color: $color-AccentSub;
+        font-size: 3.5rem;
+        font-weight: bold;
+        letter-spacing: .2rem;
+        text-align: center;
+       }
+@mixin title-lv2($lv) {
+        color: $lv2-color;
+        font-size: $lv2-size;
+        font-weight: bold;
+        letter-spacing: .3rem;
+       }
+

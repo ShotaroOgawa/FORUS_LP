@@ -1,0 +1,58 @@
+.features {
+   background-color: rgba(255, 237, 178, .4);
+   padding-top: 80px;
+    
+    position: relative;
+    &_BigImg {
+        position: absolute;
+        right: 0;
+        top: -80px;
+        width: 50%;
+
+    }
+    &_DeviceImg {
+        max-width: 100%;
+    }
+    &_inner {
+        @include inner;
+    }
+    &_TitleLv1 {
+       
+        width: 45%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #fff;
+        background-color: $color-main;
+        padding: 10px 15px;
+        border-radius: 10px;
+
+        &:after{
+            font-weight: normal;
+            content: "3 possible features of FORUS";
+            display: block;
+            font-size: 1.3rem; 
+            color: $color-accent;   
+        }
+    }
+    &_cont {
+        display: flex;
+        align-items: center;
+    }
+    &_ContImg {
+        width: 450px;
+    }
+    &_AppImg {
+        max-width: 100%;
+    }
+    &_TxtBox {
+      width: 50%;
+    }
+    &_TitleLv2 {
+        @include title-lv2($color-main,2.3rem)
+    }
+    &_TitleLv3 {
+        font-size: 2rem;
+        color: $color-;
+    }
+}

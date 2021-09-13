@@ -1,0 +1,15 @@
+html {
+    font-family: $font;
+    font-size: 62.5%;
+    line-height: $lineHeight;
+}
+
+@mixin line-height($pixels , $height) {
+	font-size: $pixels * .1rem;
+	line-height: $height / $pixels;
+}
+
+ width: 98%;
+        letter-spacing: .2rem;
+        @include line-height(14,28);
+

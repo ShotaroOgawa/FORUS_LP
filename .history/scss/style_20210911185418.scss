@@ -1,0 +1,16 @@
+html {
+    .header {
+       
+        &_inner {
+            
+            display: flex; 
+        }
+        &_logo {
+            width: 180px;
+        }
+        &_LogoImg {
+           
+            max-width: 100%;
+        }
+    }
+}

@@ -1,2 +1,463 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+html {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "メイリオ", Meiryo, "Yu Gothic", YuGothic, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+.about {
+  position: relative;
+  padding-bottom: 140px;
+}
+
+.about_inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about_BgTxt {
+  z-index: -99;
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  color: #FFEDB2;
+  font-weight: bold;
+  font-size: 17rem;
+  line-height: 1.35294;
+  opacity: .4;
+}
+
+.about_TitleLv1 {
+  padding-top: 60px;
+  font-size: 1.3rem;
+  color: #FFD159;
+  text-align: center;
+}
+
+.about_TitleLv1:before {
+  position: relative;
+  bottom: -8px;
+  display: block;
+  content: "About";
+  color: #888888;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.about_content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.about_img {
+  width: 430px;
+}
+
+.about_ImgPic {
+  max-width: 100%;
+}
+
+.about_TxtBox {
+  width: 50%;
+  padding-left: 40px;
+}
+
+.about_TitleLv2 {
+  color: #374149;
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: .3rem;
+  padding-bottom: 35px;
+}
+
+.about_txt {
+  width: 98%;
+  letter-spacing: .2rem;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+.features {
+  background-color: rgba(255, 237, 178, 0.4);
+  padding-top: 60px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.features_BigImg {
+  position: absolute;
+  right: 0;
+  top: -80px;
+  width: 50%;
+}
+
+.features_DeviceImg {
+  max-width: 100%;
+}
+
+.features_inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.features_TitleLv1 {
+  width: 45%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: #374149;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.features_TitleLv1:after {
+  font-weight: normal;
+  content: "3 possible features of FORUS";
+  display: block;
+  font-size: 1.3rem;
+  color: #FFD159;
+}
+
+.features_cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.features_cont:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.features_ContImg {
+  width: 400px;
+}
+
+.features_AppImg {
+  max-width: 100%;
+}
+
+.features_TxtBox {
+  width: 45%;
+  padding-left: 30px;
+}
+
+.features_TxtBox-left {
+  padding-right: 30px;
+  padding-left: 0;
+}
+
+.features_TitleLv2 {
+  color: #374149;
+  font-size: 2.3rem;
+  font-weight: bold;
+  letter-spacing: .3rem;
+}
+
+.features_TitleLv3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #888888;
+  padding: 15px 0 10px;
+}
+
+.features_TitleLv3:before {
+  content: '■';
+  position: relative;
+  width: 10px;
+  height: 10px;
+  color: #FCDB68;
+  padding-right: 5px;
+}
+
+.features_txt {
+  letter-spacing: .2rem;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+.features_pre {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.features_pre_inner {
+  margin-top: 200px;
+}
+
+.features_pre_TitleBox {
+  background-color: #374149;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.features_pre_TitleLv2 {
+  color: #FFEDB2;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: .3rem;
+}
+
+.features_pre_TitleTxt {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-top: 5px;
+  letter-spacing: .15rem;
+}
+
+.features_pre_BoxContainer {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.features_pre_FuncBox {
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 2px solid #F6F6F6;
+}
+
+.features_pre_FuncBox:last-child {
+  border: none;
+  padding-bottom: 50px;
+}
+
+.features_pre_BoxLeft {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.features_pre_FuncImg {
+  width: 100px;
+}
+
+.features_pre_FuncIcon {
+  max-width: 100%;
+}
+
+.features_pre_TitleLv3 {
+  margin-left: 10px;
+  color: #374149;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: .3rem;
+}
+
+.features_pre_TitleLv3-don:before {
+  font-weight: normal;
+  content: "DONATION";
+  font-size: 1.2rem;
+  color: #FFD159;
+  display: block;
+  position: relative;
+  bottom: -8px;
+}
+
+.features_pre_TitleLv3-eve:before {
+  font-weight: normal;
+  content: "EVENT";
+  font-size: 1.2rem;
+  color: #FFD159;
+  display: block;
+  position: relative;
+  bottom: -8px;
+}
+
+.features_pre_TitleLv3-leg:before {
+  font-weight: normal;
+  content: "RESUME";
+  font-size: 1.2rem;
+  color: #FFD159;
+  display: block;
+  position: relative;
+  bottom: -8px;
+}
+
+.features_pre_FuncTxt {
+  width: 70%;
+  display: inline-block;
+  letter-spacing: .2rem;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+.header {
+  padding-top: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  color: #FFD159;
+}
+
+.header_inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  width: 180px;
+}
+
+.header_LogoImg {
+  max-width: 100%;
+}
+
+.header_MenuList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.header_MenuSection {
+  padding-left: 5%;
+}
+
+.header_MenuLink {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.header_MenuLink:hover {
+  opacity: .7;
+}
+
+.header_LinkBtn {
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: #FFD159;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  width: 120px;
+  max-width: 100%;
+  padding: 10px 3px;
+  text-align: center;
+}
+
+.header_LinkBtn:hover {
+  background-color: #fff;
+  border: 2px solid #FFD159;
+  color: #FFD159;
+  transition: .3s;
+}
+
+.mission {
+  background-color: #F6F6F6;
+  padding-bottom: 120px;
+}
+
+.mission_inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.mission_TitleLv1 {
+  padding-top: 60px;
+  font-size: 1.3rem;
+  color: #FFD159;
+  text-align: center;
+}
+
+.mission_TitleLv1:before {
+  position: relative;
+  bottom: -8px;
+  display: block;
+  content: "Mission";
+  color: #888888;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.mission_txt {
+  color: #374149;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-top: 30px;
+  letter-spacing: .15rem;
+  text-align: center;
+}
+
+.mission_container {
+  display: flex;
+  padding-top: 60px;
+}
+
+.mission_cont {
+  width: calc(100%/3);
+  text-align: center;
+}
+
+.mv {
+  height: 80vh;
+  background-image: url(/img/mv_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70% 0%;
+}
+
+.mv_inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.mv_content {
+  padding-top: 150px;
+  padding-left: 5%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mv_title {
+  background: #374149;
+  border-radius: 30px;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: inline-block;
+  width: 98%;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.mv_logo {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.mv_LogoImg {
+  max-width: 100%;
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

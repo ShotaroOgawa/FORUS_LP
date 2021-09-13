@@ -1,0 +1,16 @@
+.about {
+    position: relative;
+    &_inner {
+        @include inner;
+    }
+    &_BgTxt {
+        z-index: -99;
+        position: absolute;
+        right: 0;
+        color: $color-base;
+        font-weight: bold;
+        @include line-height(180,250);
+        opacity: .4;
+    }
+
+}

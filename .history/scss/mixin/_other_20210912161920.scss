@@ -1,0 +1,19 @@
+@mixin inner {
+    max-width: $inner;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@mixin title($text-title) {
+    position: relative;
+        bottom: -8px;
+        display: block;
+        content: $text-title;
+        color: $color-AccentSub;
+        font-size: 3.5rem;
+        font-weight: bold;
+        letter-spacing: .2rem;
+        text-align: center;
+       }
+
+@mixin Img($width:)

@@ -1,0 +1,11 @@
+.mv {
+    &_bgi {
+        background-image: url(/img/mv_bg.png);
+    background-size: cover;
+    position: absolute;
+    z-index: -99;
+    top: 0;
+    left: 0;
+    } 
+    
+}

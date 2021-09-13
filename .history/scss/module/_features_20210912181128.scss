@@ -1,0 +1,28 @@
+.features {
+    position: relative;
+    &_BigImg {
+        position: absolute;
+        right: 0;
+        top: -30px;
+        width: 700px;
+
+    }
+    &_DeviceImg {
+        max-width: 100%;
+    }
+    &_inner {
+        @include inner;
+    }
+    &_TitleLv1 {
+        
+        color: #fff;
+        background-color: $color-main;
+
+        &:after{
+            padding-top: 60px;
+            font-size: 1.rem; 
+            color: $color-accent;
+            text-align: center;
+    }
+    }
+}

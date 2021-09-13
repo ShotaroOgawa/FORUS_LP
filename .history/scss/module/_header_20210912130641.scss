@@ -1,0 +1,47 @@
+.header {
+    
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    color: $color-accent;
+    &_inner {
+        
+       @include inner;
+        display: flex;
+        justify-content: space-between; 
+    }
+    &_logo {
+        width: 180px;
+    }
+    &_LogoImg {
+        max-width: 100%;
+    }
+    &_MenuList {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    &_MenuSection {
+        padding-left: 5%;
+    }
+    &_MenuLink {    
+        display: inline-block;
+        font-size: $fontSize-pc;
+        &:hover {
+            opacity: .7;
+        }
+    }
+    &_LinkBtn {
+        font-size: 1.3rem;
+        @include RegisterBtn($color-accent);
+
+        &:hover {
+            background-color: #fff;
+            border: 2px solid $color-accent;
+            color: $color-accent;
+            transition: .3s;
+        }
+    }
+
+}

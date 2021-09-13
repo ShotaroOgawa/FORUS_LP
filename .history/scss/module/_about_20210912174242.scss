@@ -1,0 +1,56 @@
+.about {
+    position: relative;
+    &_inner {
+        @include inner;
+    }
+    &_BgTxt {
+        z-index: -99;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        color: $color-base;
+        font-weight: bold;
+        @include line-height(180,200);
+        opacity: .4;
+    }
+    &_TitleLv1 {
+        padding-top: 60px;
+       font-size: 1.3rem; 
+       color: $color-accent;
+       text-align: center;
+      
+       &:before {
+        @include title-lv1("About");
+       }
+    }
+    &_content {
+        width: 100%;
+        display: flex;
+        align-items: center;  
+        justify-content: center; 
+        
+    }
+    &_img {
+       width: 350px;
+    }
+    &_ImgPic {
+        max-width: 100%;
+    }
+    &_TxtBox {
+        width: 48%;
+    }
+    &_TitleLv2 {
+        @include title-lv2;
+        padding-bottom: 35px;
+    }
+
+    &_txt {
+        text-align-last: left;
+        width: 90%;
+        letter-spacing: .2rem;
+        @include line-height(14,28);
+        
+    }
+
+
+}

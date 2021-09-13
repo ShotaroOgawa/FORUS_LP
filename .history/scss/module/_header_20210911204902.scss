@@ -1,0 +1,14 @@
+.header {
+    color: $color-accent;
+    &_inner {
+       width: 1080px;
+        display: flex; 
+    }
+    &_logo {
+        width: 180px;
+    }
+    &_LogoImg {
+       
+        max-width: 100%;
+    }
+}

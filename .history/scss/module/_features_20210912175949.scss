@@ -1,0 +1,13 @@
+.features {
+    position: relative;
+    &_BigImg {
+        position: absolute;
+        right: 0;
+        top: ;
+        width: 600px;
+
+    }
+    &_DeviceImg {
+        max-width: 100%;
+    }
+}

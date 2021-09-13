@@ -1,0 +1,11 @@
+.about {
+    &_inner {
+        @include inner;
+    }
+    &_BgTxt {
+        color: $color-base;
+        font-weight: bold;
+        @include line-height(220,)
+    }
+
+}

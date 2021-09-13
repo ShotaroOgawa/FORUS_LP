@@ -1,0 +1,50 @@
+// ** 外部ファイル読み込み
+
+// * WebFont
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+ 
+// ** 初期設定
+// * サイト共通の値を変数で定義
+ 
+// ブレイクポイント
+$breakPoint-pc: 480px;
+$breakPoint-sp: 479px;
+ 
+// 画像格納ディレクトリ
+$imgDir: "/img/";
+ 
+// PC最小表示幅
+$inner: 1080px;
+ 
+// サイトで使用する色
+
+$color-base: #FFEDB2;
+$color-main: #374149;
+$color-sub: #F6F6F6;
+$color-accent: #FFD159;
+$color-AccentSub:#888888;
+
+
+ 
+// 基本書体
+$font: 'Noto Sans JP',
+-apple-system,
+BlinkMacSystemFont,
+'Helvetica Neue',
+'メイリオ',
+Meiryo,
+'Yu Gothic',
+YuGothic,
+sans-serif ;
+ 
+// 基本フォントサイズ
+$fontSize-pc: 1.8rem;
+$fontSize-sp: 5vw;
+ 
+// 基本行間
+$lineHeight: 1.6;
+
+// 余白
+$cont-top-space: 60px;
+$cont-bottom-space: 

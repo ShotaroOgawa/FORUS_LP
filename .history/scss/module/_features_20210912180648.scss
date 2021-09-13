@@ -1,0 +1,21 @@
+.features {
+    position: relative;
+    &_BigImg {
+        position: absolute;
+        right: 0;
+        top: -30px;
+        width: 700px;
+
+    }
+    &_DeviceImg {
+        max-width: 100%;
+    }
+    &_inner {
+        @include inner;
+    }
+    &_TitleLv1 {
+        &:after{
+
+        @include title-lv1("3 possible features of FORUS");
+    }
+}

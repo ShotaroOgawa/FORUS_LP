@@ -1,0 +1,9 @@
+@mixin RegistBtn($backgroundColor) {
+    background-color: $backgroundColor;
+    border: 1px solid $backgroundColor;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+  }

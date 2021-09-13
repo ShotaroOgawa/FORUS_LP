@@ -1,0 +1,14 @@
+@mixin Btn($color-accent) {
+  font-weight: bold;
+    background-color: $color-accent;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    width: 120px;
+    max-width: 100%;
+    padding: 10px 3px; 
+    text-align: center;
+  }

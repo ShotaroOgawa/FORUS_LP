@@ -1,0 +1,36 @@
+.features {
+    position: relative;
+    &_BigImg {
+        position: absolute;
+        right: 0;
+        top: -30px;
+        width: 700px;
+
+    }
+    &_DeviceImg {
+        max-width: 100%;
+    }
+    &_inner {
+        @include inner;
+    }
+    &_TitleLv1 {
+        width: 45%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #fff;
+        background-color: $color-main;
+
+        &:after{
+            font-weight: normal;
+            content: "3 possible features of FORUS";
+            display: block;
+            padding-top: 60px;
+            font-size: 1.3rem; 
+            color: $color-accent;
+            position: relative;
+            top: -65px;
+           
+    }
+    }
+}

@@ -1,0 +1,13 @@
+.about {
+    position: relative;
+    &_inner {
+        @include inner;
+    }
+    &_BgTxt {
+        position: absolute;
+        color: $color-base;
+        font-weight: bold;
+        @include line-height(200,300);
+    }
+
+}

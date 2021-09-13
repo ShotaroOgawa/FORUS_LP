@@ -1,0 +1,8 @@
+.mission {
+    background-color: $color-sub;
+    &_inner {
+        @include inner;
+    }
+    
+    
+}

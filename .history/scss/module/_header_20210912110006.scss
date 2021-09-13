@@ -1,0 +1,19 @@
+.header {
+    color: $color-accent;
+    &_inner {
+       @include inner;
+        display: flex; 
+    }
+    &_logo {
+        width: 180px;
+    }
+    &_LogoImg {
+        max-width: 100%;
+    }
+    &_MenuList {
+        
+    }
+    &_MenuLink {
+        font-size: $fontSize-pc;
+    }
+}
