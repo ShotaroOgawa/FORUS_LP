@@ -1,0 +1,6 @@
+.faq {
+    padding-top: $pa;
+    &_inner {
+        @include inner;
+    }
+}

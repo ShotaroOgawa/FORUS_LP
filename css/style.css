@@ -11,22 +11,23 @@ html {
   padding-bottom: 140px;
 }
 
+.about_BgTxt {
+  z-index: -99;
+  position: absolute;
+  color: #FFD159;
+  font-size: 17rem;
+  font-weight: bold;
+  line-height: 1;
+  vertical-align: text-bottom;
+  opacity: .15;
+  bottom: 200px;
+  right: -2%;
+}
+
 .about_inner {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.about_BgTxt {
-  z-index: -99;
-  position: absolute;
-  bottom: 200px;
-  right: 0;
-  color: #FFEDB2;
-  font-weight: bold;
-  font-size: 17rem;
-  line-height: 1.35294;
-  opacity: .4;
 }
 
 .about_TitleLv1 {
@@ -80,6 +81,35 @@ html {
   letter-spacing: .2rem;
   font-size: 1.4rem;
   line-height: 2;
+}
+
+.faq {
+  padding: 60px 0 120px;
+}
+
+.faq_inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.faq_TitleLv1 {
+  padding-top: 60px;
+  font-size: 1.3rem;
+  color: #FFD159;
+  text-align: center;
+}
+
+.faq_TitleLv1:before {
+  position: relative;
+  bottom: -8px;
+  display: block;
+  content: "FAQ";
+  color: #888888;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  text-align: center;
 }
 
 .features {
@@ -366,8 +396,23 @@ html {
 }
 
 .mission {
+  position: relative;
   background-color: #F6F6F6;
   padding-bottom: 120px;
+  z-index: 1;
+}
+
+.mission_BgTxt {
+  z-index: -99;
+  position: absolute;
+  color: #888888;
+  font-size: 17rem;
+  font-weight: bold;
+  line-height: 1;
+  vertical-align: text-bottom;
+  opacity: .15;
+  top: 15%;
+  left: -2%;
 }
 
 .mission_inner {
@@ -412,6 +457,47 @@ html {
 .mission_cont {
   width: calc(100%/3);
   text-align: center;
+  padding: 0 20px;
+}
+
+.mission_img {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.mission_ImgIcon {
+  max-width: 100%;
+}
+
+.mission_TitleLv2 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FFD159;
+  width: 100%;
+  position: relative;
+  line-height: 1;
+  padding: 25px 0 10px;
+}
+
+.mission_TitleLv2-sub {
+  font-size: 1.2rem;
+  color: #fff;
+  display: inline-block;
+  font-weight: normal;
+  background: #374149;
+  padding: 2px 12px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mission_ContTxt {
+  letter-spacing: .2rem;
+  font-size: 1.4rem;
+  line-height: 2;
+  letter-spacing: normal;
+  padding-top: 20px;
 }
 
 .mv {

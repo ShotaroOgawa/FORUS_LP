@@ -1,0 +1,70 @@
+.mission {
+    background-color: $color-sub;
+    padding-bottom: $cont-bottom-space;
+    &_inner {
+        @include inner;
+    }
+    &_TitleLv1 {
+        padding-top: 60px;
+       font-size: 1.3rem; 
+       color: $color-accent;
+       text-align: center;
+      
+       &:before {
+        @include title-lv1("Mission");
+       }
+    }
+
+    &_txt {
+        color: $color-main;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding-top: 30px;
+            letter-spacing: .15rem;
+            text-align: center;
+    }
+
+    &_container {
+        display: flex;
+        padding-top: 60px;
+    }
+    &_cont {
+        width: calc(100%/3);
+        text-align: center;
+    }
+    &_img {
+        width: 200px;
+        margin: 0 auto;
+    }
+    &_ImgIcon {
+        max-width: 100%;
+    }
+    // &_TxtBox {
+        
+    // }
+    &_TitleLv2 {
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: bold;
+        color: $color-accent;
+        width: 100%;
+        position: relative;
+        line-height: 1;
+        padding: 25px 0 10px;
+      
+        &-sub {
+         font-size: 1.2rem;
+        color: #fff;
+        display: inline-block;
+        font-weight: normal;
+        background:$color-main;
+        padding: 2px 12px;
+        border-radius: 20px;
+        text-align: center;
+        margin: 0 auto;
+         }
+    }
+
+    
+
+}

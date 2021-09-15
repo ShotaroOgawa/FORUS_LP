@@ -1,0 +1,26 @@
+html {
+    font-family: $font;
+    font-size: 62.5%;
+    line-height: $lineHeight;
+}
+
+@mixin line-height($pixels , $height) {
+	font-size: $pixels * .1rem;
+	line-height: $height / $pixels;
+}
+
+@mixin txt-style {
+        letter-spacing: .2rem;
+        @include line-height(14,28);
+}
+
+@mixin BgTxt-style($BgTxt-color) {
+    z-index: -99;
+    position: absolute;
+    color:  $BgTxt-color;
+    font-size: 17rem;
+    font-weight: bold;
+    line-height: 1;
+    vertical-align: text-bottom;
+        opacity: .2;
+}
