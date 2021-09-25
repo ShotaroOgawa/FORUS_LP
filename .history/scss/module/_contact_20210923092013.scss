@@ -1,0 +1,8 @@
+.contact {
+    background-color: #F4FAFF;
+
+    &_BgTxt {
+        @include BgTxt-style#a0b2c0);
+        z-index: 1;
+    }
+}

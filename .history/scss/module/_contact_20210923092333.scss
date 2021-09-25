@@ -1,0 +1,12 @@
+.contact {
+    background-color: #F4FAFF;
+    position: relative;
+
+    &_BgTxt {
+        bottom: -21px;
+        @include BgTxt-style(#E3F3FF);
+        opacity: 1;
+        z-index: 0;
+        
+    }
+}

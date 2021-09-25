@@ -1,0 +1,57 @@
+.sns {
+    &_inner {
+        @include inner;
+        text-align: center;
+    }
+  
+    &_TitleLv1 {
+        padding-top: 60px;
+       font-size: 1.3rem; 
+       color: $color-accent;
+       text-align: center;
+      
+       &:before {
+        @include title-lv1("SNS");
+       }
+    }
+    &_txt {
+        margin: 40px 0 5px;
+        text-align: center;
+        @include txt-style;
+        font-weight: bold;
+        font-size: 3rem;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+
+    &:before {
+        display: inline-block;
+        content: '';
+        width: 4px;
+        height: 48px;
+        position: absolute;
+        bottom: 3px;
+        left: -20px;
+        background: #374149;
+        border-radius: 4px;
+        transform: matrix(-0.89, 0.45, 0.45, 0.89, 0, 0); 
+    }
+    &:after {
+        display: inline-block;
+        content: '';
+        width: 4px;
+        height: 48px;
+        bottom: 3px;
+        right: -20px;
+        position: absolute;
+        background: #374149;border-radius: 4px;transform: rotate(27.05deg);
+    }
+    }
+    &_bnr {
+        max-width: 100%;
+    }
+    &_BnrImg {
+            
+    }
+
+}

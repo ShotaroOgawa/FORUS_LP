@@ -1,0 +1,18 @@
+.dwl {
+   &_parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+       z-index: -1;
+   }
+    &_inner {
+        @include inner;
+    }
+}

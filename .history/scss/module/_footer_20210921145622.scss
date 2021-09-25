@@ -1,0 +1,15 @@
+.footer {
+    background-color: $color-main;
+    &_inner {
+        @include inner;   
+        color: #fff; 
+    }
+    &_1stBlock {
+        display: flex;
+        align-items: center;
+    }
+    &_logo {
+        width: ;
+    }
+    
+}

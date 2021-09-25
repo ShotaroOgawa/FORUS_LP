@@ -1,0 +1,9 @@
+.footer {
+    color: #000;
+    &_inner {
+        @include inner;    
+    }
+    &_1stBlock {
+        display: flex;
+    }
+}

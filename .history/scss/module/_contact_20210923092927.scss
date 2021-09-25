@@ -1,0 +1,27 @@
+.contact {
+    background-color: #F4FAFF;
+    position: relative;
+    overflow: hidden;
+    &_BgTxt {
+        bottom: -19px;
+        right: -10px;
+        @include BgTxt-style(#E3F3FF);
+        opacity: 1;
+        z-index: 0;      
+    }
+    &_inner {
+        @include inner;
+    }
+
+    &_TitleLv1 {
+        padding-top: 60px;
+       font-size: 1.3rem; 
+       color: $color-accent;
+       text-align: center;
+      
+       &:before {
+        @include title-lv1("Contact");
+       }
+    }
+
+}

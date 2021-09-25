@@ -1,0 +1,25 @@
+.faq {
+    padding: $cont-top-space 0 $cont-bottom-space;
+    &_inner {
+        @include inner;
+    }
+    &_TitleLv1 {
+        padding-top: 60px;
+        font-size: 1.3rem; 
+        color: $color-accent;
+        text-align: center;
+       
+        &:before {
+         @include title-lv1("FAQ");
+        }   
+    }
+    &_cont {
+    display: block;
+    text-align: center;
+    width: 1080px;
+    }
+    &_ContBox {
+        margin: 0 auto;
+    }
+
+}

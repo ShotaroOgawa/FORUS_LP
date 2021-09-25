@@ -1,0 +1,11 @@
+.contact {
+   
+    position: relative;
+
+    &_BgTxt {
+        bottom: 1px;
+        @include BgTxt-style(#E3F3FF);
+        opacity: 1;
+        
+    }
+}

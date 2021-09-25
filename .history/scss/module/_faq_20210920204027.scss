@@ -1,0 +1,68 @@
+.faq {
+    padding: $cont-top-space 0 $cont-bottom-space;
+    &_inner {
+        @include inner;
+    }
+    &_TitleLv1 {
+        padding-top: 60px;
+        font-size: 1.3rem; 
+        color: $color-accent;
+        text-align: center;
+       
+        &:before {
+         @include title-lv1("FAQ");
+        }   
+    }
+    &_cont {
+    display: block;
+    width: 1080px;
+    max-width: 100%;
+    }
+    &_ContBox {
+       width: 1010px;
+       max-width: 100%;
+       margin: 0 auto;
+       cursor: pointer;
+       padding-bottom: 30px;
+       
+      
+    }
+    &_q {
+        background-color: #FFF6DE;
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        border-radius: 10px;
+        
+        
+    }
+    &_a {
+        background-color: $color-sub;
+        padding: 15px 8px;
+        padding-right: 1em;
+        display: flex;
+        align-items: top;
+    }
+    &_BoxTitle {
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding:0 .3em 0 .5em;
+
+
+        &.-q {
+            color: $color-accent;
+        }
+        &.-a {
+            color: #DA4943;
+            line-height:1;
+        }
+    }
+    &_QTxt {
+        padding-top: 5px;
+        letter-spacing: .2rem;
+        @include line-height(14,28);
+    }
+    &_ATxt {
+        @include txt-style;
+    }
+}

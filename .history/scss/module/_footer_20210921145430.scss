@@ -1,0 +1,11 @@
+.footer {
+    background-color: rgb(177, 138, 138);
+   
+    &_inner {
+        @include inner;   
+        color: #fff; 
+    }
+    &_1stBlock {
+        display: flex;
+    }
+}

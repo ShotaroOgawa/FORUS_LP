@@ -1,0 +1,16 @@
+修正必要箇所
+
+・MVが上に寄りすぎてしまっている
+・windowsで見たときに右側のデバイス画像が切れている
+↑最後に対応
+
+
+・ダウンロードコンテンツから
+
+・FAQ開閉の矢印実装
+https://flex-box.net/accordion/
+
+・コンタクトフォーム制作から
+  section.contact>.section_inner>.section>form
+
+・FAQ部分はjqueryの書籍参考にしながら制作
