@@ -1,0 +1,27 @@
+.footer {
+    background-color: $color-main;
+    &_inner {
+        @include inner;   
+        color: #fff; 
+    }
+    &_1stBlock {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        width: 100%;
+    }
+    &_logo {
+        width: 170px;
+    }
+    &_LogoImg {
+        max-width: 100%;
+    }
+    &_MenuList {
+        
+        display: flex;
+        width: 100%;
+    }
+    &_MenuSection {
+        padding-left: 5%;
+    }
+}

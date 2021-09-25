@@ -1,0 +1,8 @@
+.dwl {
+   &_parallax {
+       position:fixed;
+   }
+    &_inner {
+        @include inner;
+    }
+}

@@ -1,0 +1,14 @@
+.dwl {
+   &_parallax {
+    background-image: url('/img');
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+   
+   }
+    &_inner {
+        @include inner;
+    }
+}

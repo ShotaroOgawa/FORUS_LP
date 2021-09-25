@@ -1,0 +1,13 @@
+.contact {
+    background-color: #F4FAFF;
+    position: relative;
+    overflow: hidden;
+    &_BgTxt {
+        bottom: -2px;
+        right: -10px;
+        @include BgTxt-style(#E3F3FF);
+        opacity: 1;
+        z-index: 0;
+        
+    }
+}

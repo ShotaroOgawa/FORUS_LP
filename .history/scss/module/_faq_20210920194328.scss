@@ -1,0 +1,42 @@
+.faq {
+    padding: $cont-top-space 0 $cont-bottom-space;
+    &_inner {
+        @include inner;
+    }
+    &_TitleLv1 {
+        padding-top: 60px;
+        font-size: 1.3rem; 
+        color: $color-accent;
+        text-align: center;
+       
+        &:before {
+         @include title-lv1("FAQ");
+        }   
+    }
+    &_cont {
+    display: block;
+    width: 1080px;
+    max-width: 100%;
+    }
+    &_ContBox {
+       width: 1010px;
+       max-width: 100%;
+       margin: 0 auto;
+       cursor: pointer;
+    }
+    &_q {
+        background-color: $color;
+    }
+    &_BoxTitle {
+        font-size: 2.5rem;
+        font-weight: bold;
+
+        &.-q {
+            color: $color-accent;
+        }
+        &.-a {
+            color: #DA4943;
+        }
+    }
+
+}

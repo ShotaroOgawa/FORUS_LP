@@ -1,0 +1,6 @@
+.dwl {
+    background-image: url();
+    &_inner {
+        @include inner;
+    }
+}

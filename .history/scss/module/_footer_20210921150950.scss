@@ -1,0 +1,61 @@
+.footer {
+    background-color: $color-main;
+    &_inner {
+        @include inner;   
+        color: #fff; 
+    }
+    &_1stBlock {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        width: 100%;
+    }
+    &_logo {
+        width: 170px;
+    }
+    &_LogoImg {
+        max-width: 100%;
+    }
+    &_MenuList {
+        font-size: 1.4rem;
+        font-weight: bold;
+        display: flex;
+        flex: 1;
+        padding-left: 2em;
+    }
+    &_MenuSection {
+        padding-left: 4%;
+        
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+    &_RegBtn {
+        font-size: 1.3rem;
+        @include BtnLy($color-accent);
+        &:hover {
+            background-color: #fff;
+            border: 2px solid $color-accent;
+            color: $color-accent;
+            transition: .3s;
+        }
+    }
+    &_2ndBlock {
+        width: 100%;
+        display: flex;
+    }
+    &_OtherList {
+        display: flex;
+        font-size: 1.2rem;
+    }
+    &_OtherSection {
+        padding-left: 4%;
+        
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+    &_CopyRight {
+        display: block;
+    }
+}

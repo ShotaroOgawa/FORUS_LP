@@ -1,0 +1,39 @@
+.sns {
+    &_inner {
+        @include inner;
+    }
+  
+    &_TitleLv1 {
+        padding-top: 60px;
+       font-size: 1.3rem; 
+       color: $color-accent;
+       text-align: center;
+      
+       &:before {
+        @include title-lv1("SNS");
+       }
+    }
+    &_txt {
+        @include txt-style;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        position: relative;
+
+    &:before {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 48px;
+        bottom: 0px;
+        
+       
+        background: #374149;
+        border-radius: 4px;
+        transform: matrix(-0.89, 0.45, 0.45, 0.89, 0, 0);
+       
+    }
+    }
+
+}

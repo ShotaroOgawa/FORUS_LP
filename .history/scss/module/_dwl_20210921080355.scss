@@ -1,0 +1,10 @@
+.dwl {
+   &_parallax {
+       
+       z-index: -1;
+       width: 100%;
+   }
+    &_inner {
+        @include inner;
+    }
+}

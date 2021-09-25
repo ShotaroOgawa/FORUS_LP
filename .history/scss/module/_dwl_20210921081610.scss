@@ -1,0 +1,11 @@
+.dwl {
+   &_parallax {
+    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+   
+   }
+    &_inner {
+        @include inner;
+    }
+}

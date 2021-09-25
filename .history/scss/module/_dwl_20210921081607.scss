@@ -1,0 +1,9 @@
+.dwl {
+   &_parallax {
+    display: flex;
+   
+   }
+    &_inner {
+        @include inner;
+    }
+}

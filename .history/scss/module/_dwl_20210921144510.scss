@@ -1,0 +1,61 @@
+.dwl {
+   &_parallax {
+    background-image: url('/img/dwl_BG.png');
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    width: 100%;
+  
+   
+   }
+    &_inner {
+        @include inner;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+       
+    }
+    &_TxtBox {
+        width: 40%;
+    }
+    &_TitleLv1 {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+        letter-spacing: .5rem;
+        color: #fff;
+        background-color: $color-main;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+    &_txt {
+        padding: 25px 0 50px;
+        @include txt-style;
+    }
+    &_links {
+        display: flex;
+        align-items: center;   
+
+    }
+    &_LinkBtn {
+        width: 190px;
+        display: inline-block;
+        &.-ios {
+            padding-right: 10px;       
+        }
+        &
+    }
+    &_LinkImg {
+        max-width: 100%;
+    }
+    &_AppScreen {
+        display: inline-block;
+        width: 45%;
+    }
+    &_AppImg {
+        max-width: 100%;
+    }
+}
