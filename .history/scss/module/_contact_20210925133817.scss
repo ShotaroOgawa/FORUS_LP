@@ -1,0 +1,102 @@
+.contact {
+    padding-top: $cont-top-space;
+    padding-bottom: $cont-bottom-space;
+    background-color: #F4FAFF;
+    position: relative;
+    overflow: hidden;
+  
+  
+
+    &_BgTxt {
+        bottom: -19px;
+        right: -10px;
+        @include BgTxt-style(#E3F3FF);
+        opacity: 1;
+        z-index: 1;
+    }
+    &_inner {
+        @include inner;
+        
+    }
+    &_form {
+        position: relative;
+        margin-top: 60px;
+        width: 1080px;
+        max-width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 2;
+        
+    }
+
+    &_FormInner {
+        padding: 70px 0 80px;
+        width: 1010px;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    &_TitleLv1 {
+        padding-top: 60px;
+       font-size: 1.3rem; 
+       color: $color-accent;
+       text-align: center;
+      
+       &:before {
+        @include title-lv1("Contact");
+       }
+    }
+
+    &_clearfix {
+        margin-bottom: 45px;  
+    }
+    &_FormTopic {
+        color: #fff;
+        font-weight: normal;
+        font-size: 1.2rem;
+        background-color: $color-main;
+        padding: 5px 15px;
+       line-height: 1;
+        border-radius: 40px;
+        display: inline-block;
+        margin-bottom: 20px;
+      
+    }
+    &_TopicImp {
+        font-size: 1.2rem;
+    }
+    &_FormDesc {
+        background: $color-sub;
+    }
+
+    input { 
+        padding: 10px 15px;
+    }
+
+    textarea {
+        @include FormTxt;
+    }
+    &_transmission {
+        width: 100%;
+        text-align: center;
+    }
+    &_BtnSubmit {
+        display: inline-block;
+       
+        font-size: 1.5rem;
+        @include BtnLy($color-accent);
+        color: #fff;
+
+        
+        width: 250px;
+       
+        &:hover {
+            background-color: #fff;
+            border: 2px solid $color-accent;
+            color: $color-accent;
+            transition: .3s;
+        }
+    }
+
+}
+

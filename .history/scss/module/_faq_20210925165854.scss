@@ -1,0 +1,103 @@
+.faq {
+    padding: $cont-top-space 0 $cont-bottom-space;
+    position: relative;
+    &_BgTxt {
+        @include BgTxt-style($color-accent);
+       	top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        
+    }
+    &_inner {
+        @include inner;
+        
+    }
+    &_TitleLv1 {
+        padding-top: 60px;
+        font-size: 1.3rem; 
+        color: $color-accent;
+        text-align: center;
+       
+        &:before {
+         @include title-lv1("FAQ");
+        }   
+    }
+    &_cont {
+    display: block;
+    width: 1080px;
+    max-width: 100%;
+    padding-top: 50px;
+    
+    }
+    &_ContBox {
+       width: 1010px;
+       max-width: 100%;
+       margin: 0 auto;
+       cursor: pointer;
+       padding-bottom: 30px;
+      
+       
+       
+      
+    }
+    &_q {
+        background-color: #FFF6DE;
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        border-radius: 10px 10px 0 0;
+        
+        &.-box {
+            
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: 25px;
+            top: 38%;
+            transition: all 0.2s ease-in-out;
+        
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+            border-top: solid 2px $color-AccentSub;
+            border-right: solid 2px $color-AccentSub;
+            -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+        }
+        
+    }
+    &_a {
+        background-color: $color-sub;
+        padding: 15px 8px;
+        padding-right: 1em;
+        display: flex;
+        align-items: top;
+        border-radius: 0 0 10px 10px;
+    }
+    &_BoxTitle {
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding:0 .3em 0 .5em;
+
+
+        &.-q {
+            color: $color-accent;
+        }
+        &.-a {
+            color: #DA4943;
+            line-height:1;
+        }
+    }
+    &_QTxt {
+        padding-top: 5px;
+        letter-spacing: .2rem;
+        @include line-height(14,28);
+
+    }
+    &_ATxt {
+        @include txt-style;
+    }
+}

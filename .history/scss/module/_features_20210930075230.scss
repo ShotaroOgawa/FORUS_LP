@@ -1,0 +1,231 @@
+.features {
+   background-color: rgba(255, 237, 178, .4);
+   padding-top: $cont-top-space;
+   padding-bottom: $cont-bottom-space;
+   overflow: hidden;
+    position: relative;
+    &_BigImg {
+        position: absolute;
+        right: 0%;
+        top: -80px;
+        max-width: 50%;
+
+        @include sp {
+            display: none;
+        }
+    }
+    &_DeviceImg {
+        max-width: 100%;
+    }
+    &_inner {
+        @include inner;
+        overflow: hidden;
+    }
+    &_TitleLv1 {
+       
+        width: 45%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #fff;
+        background-color: $color-main;
+        padding: 10px 15px;
+        border-radius: 10px;
+
+        @include sp {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &:after{
+            font-weight: normal;
+            content: "3 possible features of FORUS";
+            display: block;
+            font-size: 1.3rem; 
+            color: $color-accent;   
+        }
+    }
+    &_cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 100px;
+
+        @include sp {
+            text-align: center;
+            flex-direction: column;
+        }
+
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+
+            @include sp {
+                flex-direction: column;
+            }
+
+        }
+    }
+    &_ContImg {
+        width: 400px;
+
+        @include sp {
+            order: 2;
+        }
+    }
+    &_AppImg {
+        max-width: 100%;
+    }
+    &_TxtBox {
+      width: 45%;
+      padding-left: 30px;
+
+      @include sp {
+          width: 100%;
+          padding-left: 0;
+      }
+
+      &.-left {
+        padding-right: 30px;
+        padding-left: 0;
+      }
+    }
+
+    &_BgTxt {
+        @include BgTxt-style($color-AccentSub);
+        font-size: 30rem;
+      
+    }
+
+    &_TitleLv2 {
+        @include title-lv2($color-main,2.3rem);
+
+        &.-post {
+            display: block;
+
+            &:before {
+               @include title-small("POST");
+            }
+        }
+
+        &.-news {
+            display: block;
+            &:before {
+               @include title-small("NEWS-FEED");
+            }
+        }
+        &.-pass {
+            display: block;
+            &:before {
+               @include title-small("FORUS-PASSPORT");
+            }
+        }
+    }
+
+    &_TitleLv3 {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: $color-AccentSub;
+        padding: 15px 0 10px;
+
+        &:before {
+            content: '■';
+            position: relative;
+            width: 10px;
+            height: 10px;
+            color: #FCDB68;
+            padding-right: 5px;
+        }
+    }
+    &_txt {
+        @include txt-style;
+    }
+    &_pre {
+        @include inner;
+        &_inner {
+        margin-top: 200px;
+        }
+        &_TitleBox {
+            background-color: $color-main;
+            border-radius: 10px 10px 0px 0px;  
+            text-align: center;
+            padding: 20px 0;
+        }
+    
+        &_TitleLv2 {
+            @include title-lv2($color-base,2rem)
+        }
+        &_TitleTxt {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding-top: 5px;
+            letter-spacing: .15rem;
+        }
+        &_BoxContainer {
+            background-color: #fff;
+            width: 100%;
+            border-radius: 0px 0px 10px 10px; 
+           
+           
+               
+        }
+        &_FuncBox { 
+            padding: 30px 10px;
+            display: flex;
+            align-items: center; 
+            width: 90%;
+            margin: 0 auto;
+            border-bottom: 2px solid $color-sub;
+
+              &:last-child {
+                border: none;
+                padding-bottom: 50px;
+              }
+        }
+        &_BoxLeft {
+            width: 40%;
+            display: flex;
+            align-items: center;
+           
+        }
+        &_FuncImg {
+            width: 100px;
+        } 
+        &_FuncIcon {
+            max-width: 100%;
+        }
+        &_TitleLv3 {
+            margin-left: 10px;
+            @include title-lv2($color-main,1.8rem);
+            &-don{
+                &:before {
+                    @include title-small("DONATION");
+                }
+            }
+            &-eve{
+                &:before {
+                    @include title-small("EVENT");
+                }
+            }
+            &-leg{
+                &:before {
+                    @include title-small("RESUME");
+                }
+            }
+          
+        }
+        
+
+        &_FuncTxt {
+            width: 70%;
+            display: inline-block;
+            @include txt-style;
+        }
+
+
+
+    }
+
+}
