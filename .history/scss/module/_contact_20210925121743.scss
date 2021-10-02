@@ -1,0 +1,315 @@
+.contact {
+    padding-top: $cont-top-space;
+    padding-bottom: $cont-bottom-space;
+    background-color: #F4FAFF;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+
+    &_BgTxt {
+        bottom: -19px;
+        right: -10px;
+        @include BgTxt-style(#E3F3FF);
+        opacity: 1;
+        z-index: -1;      
+    }
+    &_inner {
+        @include inner;
+    }
+    &_form {
+        margin-top: 60px;
+        width: 1080px;
+        max-width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &_FormInner {
+        padding: 70px 0 80px;
+        width: 1010px;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    &_TitleLv1 {
+        padding-top: 60px;
+       font-size: 1.3rem; 
+       color: $color-accent;
+       text-align: center;
+      
+       &:before {
+        @include title-lv1("Contact");
+       }
+    }
+
+    &_clearfix {
+        margin-bottom: 45px;  
+    }
+    &_FormTopic {
+        color: #fff;
+        font-weight: normal;
+        font-size: 1.2rem;
+        background-color: $color-main;
+        padding: 5px 15px;
+       line-height: 1;
+        border-radius: 40px;
+        display: inline-block;
+        margin-bottom: 20px;
+      
+    }
+    &_TopicImp {
+        font-size: 1.2rem;
+    }
+    &_FormDesc {
+        background: $color-sub;
+    }
+
+    input {
+       color: #000;
+        font-size: 18px;
+        height:30px;
+        padding: 3px 0 3px 10px;
+        margin:0;
+        
+        
+    }
+    &_BtnSubmit {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+    }
+
+}
+
+$over_pc: "only screen and (min-width:1080px)";
+$space_s: .8rem;
+$space: 1.6rem;
+$lh_s: 1.8;
+// フォームパーツ以外のCSS。
+html {
+  font-size: 62.5%;
+}
+body{
+  padding: 3rem;
+  *{
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+}
+.u-center{
+  text-align: center;
+}
+.s-formlist{
+  dt{
+    font-weight: bold;
+    padding-top: $space;
+    margin-bottom: $space_s;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+  }
+  dd{
+    padding-bottom: $space;
+    line-height: 1.4;
+  }
+  &__icon{
+    display: inline-block;
+    font-weight: normal;
+    font-size: 1.2rem;
+    width: 3em;
+    padding: .3em;
+    text-align: center;
+    background: #B3B3B3;
+    color: #fff;
+    margin-right: $space_s;
+    &.is-required{
+      background: #F58271;
+    }
+  }
+  &__checklist{
+    li:not(:last-child){
+      margin-bottom: $space_s;
+    }
+    label{
+      display: block;
+      border: 1px solid #CED1D2;
+      border-radius: 6px;
+      padding: 1rem;
+    }
+    @media #{$over_pc}{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        width: 50%;
+        &:not(:nth-last-of-type(-n+2)){
+          margin-bottom: $space;
+        }
+      }
+      label{
+        display: inline-block;
+        border: none;
+        padding: 0;
+      }
+    }
+  }
+  &__radiolist{
+    li:not(:last-child){
+      margin-bottom: $space;
+    }
+    @media #{$over_pc}{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        margin-right: 3.2rem;
+        &:not(:last-child){
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// ここからフォームパーツ。
+input, select, textarea {
+  // ブラウザデフォルト表示のクリア【1】。
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  max-width:100%;
+  color:inherit;
+  font-family:inherit;
+  // iOSでフォームパーツが拡大するのを防ぐ。
+  font-size:1.6rem;
+  // Mac/iOS Safariでplaceholderが上にずれるのを防ぐ。
+  line-height: 1.6;
+  border-radius: 6px;
+  border: 1px solid #CED1D2;
+  background: #F9FAFA;
+  outline: none;
+}
+input[type="text"], input[type="number"], input[type="tel"], input[type="email"], input[type="password"] {
+  padding: 1rem 1.2rem;
+  //デフォルト幅を設定。
+  width: 14em;
+}
+textarea {
+  padding: 1rem 1.2rem;
+  width: 100%;
+  height: 10em;
+}
+//エラー時の表示色変更。
+input[type="text"].is-error, input[type="number"].is-error, input[type="tel"].is-error, input[type="email"].is-error, input[type="password"].is-error, select.is-error, textarea.is-error {
+  border:1px solid #F58271;
+  background: #FEF2F0;
+}
+select {
+  //オリジナルの矢印画像を表示するためpadding-rightを広くあけておく。
+  padding:1rem 3.6rem 1rem 1.2rem;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225.532%22%20height%3D%2214%22%20viewBox%3D%220%200%2025.532%2014%22%3E%3Cpath%20d%3D%22M82.249%2C82.431l.875.851%2C12.25-11.915h0l.875-.851-.875-.851h0L83.124%2C57.75l-.875.851L94.5%2C70.516Z%22%20transform%3D%22translate(83.282%20-82.249)%20rotate(90)%22%20fill%3D%22%23999%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 8px) center;
+  background-size: 14px 8px;
+}
+// ブラウザデフォルト表示のクリア【2】。IE11のselect矢印を非表示にする。
+select::-ms-expand {
+  display: none;
+}
+// ブラウザデフォルト表示のクリア【3】。IE11/Edgeの☓印クリアボタンを非表示にする。
+input::-ms-clear {
+  visibility:hidden;
+}
+//IE11のplaceholderテキスト色を設定する。
+:-ms-input-placeholder{
+  color: #9EA3A5;
+}
+//その他のブラウザのplaceholderテキスト色を設定する。
+::-webkit-input-placeholder {
+  color: #9EA3A5;
+}
+input[type="checkbox"],input[type="radio"]{
+  //checkboxとradioを非表示にする。
+  display: none;
+}
+label{
+  cursor: pointer;
+}
+.c-checkbox{
+  //checkboxの後ろにlabelまたはspanなどを配置する。
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+  line-height: 1.2;
+  cursor: pointer;
+  &:before{
+    content: "";
+    display: block;
+    margin-right: .6rem;
+    border: 1px solid #CED1D2;
+    border-radius: 3px;
+    background: #F9FAFA;
+    width: 22px;
+    height: 22px;
+    // IE11でbeforeコンテンツ幅を保持する。
+    flex: 1 0 auto;
+  }
+}
+:checked + .c-checkbox{
+  position: relative;
+  &:before{
+    border: 1px solid #008EC1;
+    background: #008EC1;
+  }
+  &:after{
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20enable-background%3D%22new%200%200%2024%2016%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20clip-rule%3D%22evenodd%22%20d%3D%22m24%202.8-14.1%2013.2-9.9-9.3%202.6-2.8%207.2%206.8%2011.5-10.7z%22%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 3px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.c-radio{
+  // radioの後ろにlabelまたはspanなどを配置する。
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+  line-height: 1.2;
+  cursor: pointer;
+  &:before{
+    content: "";
+    display: block;
+    margin-right: .6rem;
+    border: 1px solid #CED1D2;
+    border-radius:50%;
+    background: #F9FAFA;
+    width: 22px;
+    height: 22px;
+    // IE11でbeforeコンテンツ幅を保持する。
+    flex: 1 0 auto;
+  }
+}
+:checked + .c-radio{
+  position: relative;
+  &:after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #008EC1;
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
